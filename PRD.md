@@ -184,7 +184,7 @@
 - Assets
 
   - CKB: capacity of plain ckb cells
-  - Occupied: @ShiningRay could you add detailed explanation of this field
+  - Occupied: The cell is consideres as "occupied" if the type script of this cell is not empty or the data field of this cell is not empty
   - Nervos DAO deposit: capacity deposited into Nervos DAO
   - Nervos DAO compensation: interest earned by deposited capacity
   - User defined token
