@@ -324,10 +324,16 @@
 
 ### Charts Page: `/charts` or `/charts/{chart name}`
 
+When the charts is based on time series, they are generally based on daily statistics, which mean the 
+If not explictly specify the time series unit of the chart, it means the charts is generated as daily statistics.
+
 - Block
   - Block time distribution: the x-axis is block intervals in seconds, and the y-axis is the frequency of occurrence in the latest 50,000 blocks.
   - Epoch time distribution: the x-axis is epoch intervals in hours, and the y-axis is the frequency of occurrence in the latest 500 epochs.
-  - Average block time: average block intervals with daily & weekly smooth window
+  - Average block time: average block intervals with daily & weekly *sliding smooth window*
+    First calculate average block time by hour, and then calculate average daily smooth window by each timestamp with its preceding 24 hour records.
+    Calculate rolling average weekly by each timestamp with its preceding 7 * 24 hour recrods.
+    The x-axis of this chart is based on hour.
 - Mining
   - Difficulty & Hash Rate & Uncle Rate
   - Epoch Time & Epoch Length
@@ -338,12 +344,12 @@
 - Activities
   - Transaction count per day
   - Unique address Used per day: count of addresses used accrued from 0
-  - Cell count: count of live cells and all cells
+  - Cell count: current total count of live cells and dead cells on chain by each day.
   - Balance ranking: list 50 addresses that hold the most capacity
   - Balance distribution
   - Transaction fee
 - Nervos DAO
-  - Total deposit: deposited capacity and deposited addresses
+  - Total deposit: total deposited and locked capacity on chain and deposited addresses by each day.
   - Daily deposit: deposited capacity and deposited addresses per day
   - Deposit to circulation ratio: the ratio of DAO deposit to circulating supply. Where the circulating supply is equal to the total supply minus the burnt part and the unvested part.
 - Economic Status
@@ -362,7 +368,10 @@
     Nominal inflation rate: the inflation introduced by the primary issuance and the secondary issuance.
     Nominal APC: the anti-dilution compensation rate of Nervos DAO.
     Real inflation rate: the compound inflation rate the nominal inflation rate minus the nominal APC, which is gradual to zero.
+  - Circulating Supply
+    Until specific block, the total issued CKBytes minus all kinds of locked CBbytes and burnt amount.
   - Liquidity
+    Circulating Supply minus current DAO total deposits.
 
 ### Other pages
 
