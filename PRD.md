@@ -77,7 +77,7 @@
 
 - Transaction hash: link to transaction page `/transaction/{hash}`
 - Height: number of the block which packaged the transaction, link to `/block/{number}`
-- Capacity: covered capacity of the transaction, sum of inputs' capacity or sum of outputs'capacity
+- Capacity: covered capacity of the transaction, sum of inputs' capacity or sum of outputs'capacity + transaction fee
 - Time
 
 ### Block Page: `/block/{number | hash}`
