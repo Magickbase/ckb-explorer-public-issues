@@ -151,10 +151,10 @@
 
 - Output Cell List
   - address toggle: switch address between deprecated format and active format
-  - input item
+  - output item
     - index: index of input cell in the list, start from 0
-    - right-arrow: every input cell comes from another transaction as output cell, the arrow is a link to the transaction generated this cell.
     - address: address owns this cell
+    - right-arrow/ring icon: show ring icon if this output has not been consumed in a transaction, or show the right-arrow with a link to the transaction consumed this output cell
     - detail: type of the cell
       - CKB Capacity: plain cell, doesn't have `type script`
       - UDT Cell: sudt cell, has `sudt type script`
