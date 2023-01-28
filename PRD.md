@@ -85,7 +85,7 @@
 - Overview
 
   - Block hash
-  - Block height
+  - Block height: link to prev/next block
   - Count of transactions
   - Count of proposal transactions: `proposals` of the block
   - Miner reward: first transaction of the block
