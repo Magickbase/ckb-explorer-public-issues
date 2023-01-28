@@ -92,6 +92,7 @@
   - Difficulty: `compact_target` of the block
   - Nonce: `nonce` of the block
   - Count of uncle blocks: `uncles` of the block
+  - Block size: size of the block, size of the largest block in the current epoch, size of the largest block on the chain(except the genesis block)
   - Miner: miner address, link to `/address/{miner}`
   - Miner message: parsed from witness of the cellbase.
   - Epoch: epoch index of the block
@@ -123,6 +124,8 @@
   - Download button: click to download raw data structure of the transaction
   - Block Height: number of block packaged this transaction, link to `/block/{number}`
   - Transaction fee: fee of this transaction, equals to `sum(output.capacity) - sum(input.capacity)`
+  - Transaction fee rate: `fee / size`
+  - Transaction size: size of the transaction, size of the largest transaction in the current epoch, size of the largest transaction on the chain(except txs in the genesis block
   - Timestamp: timestamp of the block packaged this transaction
   - Status: `pending` or `x confirmations`, confirmations is the depth of block
   - Transaction parameters
