@@ -1,7 +1,9 @@
 ### General Components:
 
-- Navbar in the header
-![navbar](https://user-images.githubusercontent.com/122437870/216756902-24f6e241-4bf6-4948-a269-8c5b204df7b3.png)
+
+
+- Navbar in the header 
+  ![navbar](https://user-images.githubusercontent.com/122437870/216756902-24f6e241-4bf6-4948-a269-8c5b204df7b3.png) 
   - Logo: link to the homepage
   - Home: link to the homepage
   - Nervos DAO: link to the dao page `/nervosdao`
@@ -12,9 +14,10 @@
   - Search Field: a text field for searching, will be hidden on homepage until the window is scrolled to a proper position.
   - Chain type switch: mainnet/testnet
   - Language switch: English/Chinese
-
+  
 - Footer
-![footer](https://user-images.githubusercontent.com/122437870/216756905-b1ccd6c3-cac2-4a15-ab0a-36e5af3125fa.png)
+
+  ![footer](https://user-images.githubusercontent.com/122437870/216756905-b1ccd6c3-cac2-4a15-ab0a-36e5af3125fa.png)
   - Foundation: link to `https://nervos.org`
   - Developer
     - Docs: https://docs.nervos.org/
@@ -32,7 +35,8 @@
     - Forum: https://talk.nervos.org/
 
 - Notification
-![notification](https://user-images.githubusercontent.com/122437870/216756912-6bbfa700-b0a9-4271-9cdf-13e3629271e4.png)
+ 
+  ![notification](https://user-images.githubusercontent.com/122437870/216756912-6bbfa700-b0a9-4271-9cdf-13e3629271e4.png)
   - Action notification: like copy text successfully
   - Network error
   - Maintainance notification
@@ -41,7 +45,8 @@
 ### Homepage: https://explorer.nervos.org/
 
 - Statistics
-![statistics](https://user-images.githubusercontent.com/122437870/216756931-115062ed-c675-4fab-a630-62034f35f3c3.png)
+ 
+  ![statistics](https://user-images.githubusercontent.com/122437870/216756931-115062ed-c675-4fab-a630-62034f35f3c3.png)
   - Last Block: block number of the tip block
   - Average Block Time: 1 hour/(count of blocks in the past hour)
   - Mining Hash Rate:
@@ -54,7 +59,8 @@
   - Chart of `hash rate`
 
 - Last Block List(15 blocks)
-![last_block_list](https://user-images.githubusercontent.com/122437870/216756992-88262faf-7673-4a0d-b653-5dbbe3a64251.png)
+
+  ![last_block_list](https://user-images.githubusercontent.com/122437870/216756992-88262faf-7673-4a0d-b653-5dbbe3a64251.png)
   - block number: link to block page `/block/{number}`
   - age: past time from now
   - miner: miner address, link to page `/address/{miner}`
@@ -63,7 +69,8 @@
   - count of cells generated/destroyed in the block: count of outputs - count of inputs
 
 - Transaction List(15 transactions)
-![transaction_list](https://user-images.githubusercontent.com/122437870/216757009-1fd022c7-7515-4610-bff3-99ee69330a1a.png)
+
+  ![transaction_list](https://user-images.githubusercontent.com/122437870/216757009-1fd022c7-7515-4610-bff3-99ee69330a1a.png)
   - transaction hash: link to transaction page `/transaction/{hash}/`
   - confirmations: block height from now
   - block number: link to block page `/block/{number}`
@@ -72,7 +79,9 @@
   - count of cells generated/destroyed: count of outputs - count of inputs
 
 ### Block List Page: https://explorer.nervos.org/block/list
+
 ![block_list_page](https://user-images.githubusercontent.com/122437870/216757019-14aeec72-8df1-4e71-a0b4-b85afe17d099.png)
+
 - Height: block number, link to block page `/block/{number}`
 - Transactions: count of transactions in the block
 - Reward: mining reward sent in the block
@@ -80,13 +89,16 @@
 - Time
 
 ### Transaction List Page: https://explorer.nervos.org/transaction/list
+
 ![transaction_list](https://user-images.githubusercontent.com/122437870/216757043-af46d9af-1bce-4669-9df8-3c3b3aeebb71.png)
+
 - Transaction hash: link to transaction page `/transaction/{hash}`
 - Height: number of the block which packaged the transaction, link to `/block/{number}`
 - Capacity: covered capacity of the transaction, sum of inputs' capacity or sum of outputs'capacity + transaction fee
 - Time
 
 ### Block Page: `/block/{number | hash}`
+
 ![block_page](https://user-images.githubusercontent.com/122437870/216757131-c067d938-72d2-41b2-ad44-90b17838ba70.png)
 
 - Overview
@@ -122,6 +134,7 @@
       - capacity
 
 ### Transaction Page: `/transaction/{hash}`
+
 ![transaction_page](https://user-images.githubusercontent.com/122437870/216757154-5d1be447-1b03-4103-ae69-eb79d833ba19.png)
 
 - Overview
@@ -176,6 +189,7 @@
       - Data
 
 ### Address Page: `/address/${hash}`
+
 ![address_page](https://user-images.githubusercontent.com/122437870/216757182-f7fa9fe7-0b3d-42b9-b27d-4a2c5e5bc6ac.png)
 
 - Overview
@@ -225,6 +239,7 @@
   - Income/outcome: ckb balance change caused by this transaction
 
 ### Sudt List Page: `/tokens`
+
 ![sudt_list_page](https://user-images.githubusercontent.com/122437870/216757195-501c3956-15dd-49b1-8e57-070a1169c313.png)
 
 - UAN & Name: show uan, full name and description, UAN is a special naming convention and can be found in https://github.com/nervosnetwork/rfcs/pull/335
@@ -233,6 +248,7 @@
 - Created time: time that token has been deployed on the chain
 
 ### Sudt Info Page: `/sudt/{hash}`
+
 ![sudt_info_page](https://user-images.githubusercontent.com/122437870/216757203-671f178c-d384-4328-bfde-ecbd771a7c3e.png)
 
 - Overview
@@ -269,6 +285,7 @@
     - Capacity/amount
 
 ### NFT Collection List Page: `/nft-collections`
+
 ![nft_collection_list_page](https://user-images.githubusercontent.com/122437870/216757215-df915e67-1f49-4d2f-b3ab-90c23d131a84.png)
 
 - Collection Name
@@ -277,6 +294,7 @@
 - Creator: address of NFT collection creator, link to `/address/{address}`
 
 ### NFT Collection Page: `/collections/{hash | cota id}`
+
 ![nft_collection_page](https://user-images.githubusercontent.com/122437870/216757223-34c7e8d6-dd41-44c0-b261-264b32481664.png)
 
 - Overview
@@ -307,6 +325,7 @@
   - Owner: Address holds this token item
 
 ### NFT Token Item Page: `/nft-info/{collection hash | cota id}/{token item id}`
+
 ![nft_token_item_page](https://user-images.githubusercontent.com/122437870/216757236-db243ebb-ff4d-46b5-83f6-c699c6527de8.png)
 
 - Overview
@@ -326,6 +345,7 @@
   - To: receiver's address, link to `/address/{address}`
 
 ### Script List Page: `/scripts`
+
 ![script_list_page](https://user-images.githubusercontent.com/122437870/216757255-10e4fd0f-c66a-424a-8a3b-d3e66a06b55b.png)
 
 - Name
@@ -338,6 +358,7 @@
   - Dep type
 
 ### Charts Page: `/charts` or `/charts/{chart name}`
+
 ![charts_page](https://user-images.githubusercontent.com/122437870/216757273-43863306-66ce-4c8c-aa85-7a20929f5b07.png)
 
 When the charts is based on time series, they are generally based on daily statistics, which mean the 
