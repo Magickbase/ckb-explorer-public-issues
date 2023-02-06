@@ -33,8 +33,9 @@
     - Reddit: https://www.reddit.com/r/NervosNetwork/
     - YouTube: https://www.youtube.com/channel/UCONuJGdMzUY0Y6jrPBOzH7A
     - Forum: https://talk.nervos.org/
+   - Copyright Information：Copyright © `years` Nervos Foundation.All Rights Reserved.
 
-- Notification
+- Notification：A floating layer below the Navbar appears and disappears after a few seconds
  
   ![notification](https://user-images.githubusercontent.com/122437870/216756912-6bbfa700-b0a9-4271-9cdf-13e3629271e4.png)
   - Action notification: like copy text successfully
@@ -55,8 +56,8 @@
   - Estimated Epoch Time: duration per epoch
   - Transactions per minute
   - Transactions in last 24h
-  - Chart of `average block time`
-  - Chart of `hash rate`
+  - Chart of `average block time`:average block time curve in the last 15 days
+  - Chart of `hash rate`:hash rate curve in the last 15 days
 
 - Last Block List(15 blocks)
 
@@ -67,6 +68,7 @@
   - rewards: mining reward to the miner
   - count of transactions
   - count of cells generated/destroyed in the block: count of outputs - count of inputs
+  - more:link to link to block list page `/block/list`
 
 - Transaction List(15 transactions)
 
@@ -77,6 +79,7 @@
   - age: past time from now
   - covered capacity of the transaction: sum of inputs' capacity or sum of outputs' capacity
   - count of cells generated/destroyed: count of outputs - count of inputs
+  - more:link to link to transaction list page `/transaction/list`
 
 ### Block List Page: https://explorer.nervos.org/block/list
 
@@ -90,7 +93,7 @@
 
 ### Transaction List Page: https://explorer.nervos.org/transaction/list
 
-![transaction_list](https://user-images.githubusercontent.com/122437870/216757043-af46d9af-1bce-4669-9df8-3c3b3aeebb71.png)
+![transaction_list_page](https://user-images.githubusercontent.com/122437870/216941387-fa5893e3-82cc-4681-9058-2035d6bb59f1.png)
 
 - Transaction hash: link to transaction page `/transaction/{hash}`
 - Height: number of the block which packaged the transaction, link to `/block/{number}`
@@ -104,13 +107,16 @@
 - Overview
 
   - Block hash
-  - Block height: link to prev/next block
-  - Count of transactions
-  - Count of proposal transactions: `proposals` of the block
+  - Copy button: click to copy block hash
+  - Block height:link to prev/next block
+  - Transactions:count of transactions
+  - Size:current block size
+  - Cycles:cycles required for transaction completion
+  - Proposal Transactions:count of proposal transactions `proposals` of the block
   - Miner reward: first transaction of the block
   - Difficulty: `compact_target` of the block
   - Nonce: `nonce` of the block
-  - Count of uncle blocks: `uncles` of the block
+  - Uncle Count：countof uncle blocks `uncles` of the block
   - Miner: miner address, link to `/address/{miner}`
   - Miner message: parsed from witness of the cellbase.
   - Epoch: epoch index of the block
@@ -143,7 +149,9 @@
   - Copy button: click to copy transaction hash
   - Download button: click to download raw data structure of the transaction
   - Block Height: number of block packaged this transaction, link to `/block/{number}`
-  - Transaction fee: fee of this transaction, equals to `sum(output.capacity) - sum(input.capacity)`
+  - Transaction Fee: fee of this transaction, equals to `sum(output.capacity) - sum(input.capacity)`
+  - Size:current transaction size
+  - Cycles:cycles required for transaction completion
   - Timestamp: timestamp of the block packaged this transaction
   - Status: `pending` or `x confirmations`, confirmations is the depth of block
   - Transaction parameters
@@ -154,6 +162,7 @@
 - Input Cell List
 
   - address toggle: switch address between deprecated format and active format
+  - warning（display deprecated addresses）：displaying in deprecated address format
   - input item
     - index: index of input cell in the list, start from 0
     - right-arrow: every input cell comes from another transaction as output cell, the arrow is a link to the transaction generated this cell.
@@ -242,6 +251,7 @@
 
 ![sudt_list_page](https://user-images.githubusercontent.com/122437870/216757195-501c3956-15dd-49b1-8e57-070a1169c313.png)
 
+- Submit Token Info: send mail to ckb-explorer@nervosnet.com
 - UAN & Name: show uan, full name and description, UAN is a special naming convention and can be found in https://github.com/nervosnetwork/rfcs/pull/335
 - 2hr transactions: count of transactions happened in the last 24hrs
 - Address count: count of holders(any address has hold this token will be included, even it has 0 balance now)
@@ -289,6 +299,7 @@
 ![nft_collection_list_page](https://user-images.githubusercontent.com/122437870/216757215-df915e67-1f49-4d2f-b3ab-90c23d131a84.png)
 
 - Collection Name
+- Submit Token Info: send mail to ckb-explorer@nervosnet.com
 - Type: m-NFT, NRC 721, CoTA
 - Holder/Minted: count of holders and minted nft token item, different from the definition of holders of sudt, an address transferred its all nfts out won't not be treated as a holder
 - Creator: address of NFT collection creator, link to `/address/{address}`
@@ -365,43 +376,44 @@ When the charts is based on time series, they are generally based on daily stati
 If not explictly specify the time series unit of the chart, it means the charts is generated as daily statistics.
 
 - Block
-  - Block time distribution: the x-axis is block intervals in seconds, and the y-axis is the frequency of occurrence in the latest 50,000 blocks.
-  - Epoch time distribution: the x-axis is epoch intervals in hours, and the y-axis is the frequency of occurrence in the latest 500 epochs.
-  - Average block time: average block intervals with daily & weekly *sliding smooth window*
+  - Block Time Distribution: the x-axis is block intervals in seconds, and the y-axis is the frequency of occurrence in the latest 50,000 blocks.
+  - Epoch Time Distribution: the x-axis is epoch intervals in hours, and the y-axis is the frequency of occurrence in the latest 500 epochs.
+  - Average Block Time: average block intervals with daily & weekly *sliding smooth window*
     First calculate average block time by hour, and then calculate average daily smooth window by each timestamp with its preceding 24 hour records.
     Calculate rolling average weekly by each timestamp with its preceding 7 * 24 hour recrods.
     The x-axis of this chart is based on hour.
 - Mining
-  - Difficulty & Hash Rate & Uncle Rate
-  - Epoch Time & Epoch Length
-  - Difficulty
-  - Hash Rate
-  - Uncle Rate
-  - Top Miners(Recent 7 days)
+  - Difficulty & Hash Rate & Uncle Rate:the x-axis is epoch number, and the y-axis is the value of difficulty & hash rate & uncle rate.
+  - Epoch Time & Epoch Length:the x-axis is epoch number, and the y-axis is the value of epoch time & epoch length.
+  - Difficulty:the x-axis is intervals in days, and the y-axis is the difficulty of the day.
+  - Hash Rate:the x-axis is intervals in days, and the y-axis is the hash rate of the day.
+  - Uncle Rate:the x-axis is intervals in days, and the y-axis is the uncle rate of the day.
+  - Top Miners(Recent 7 days)：pie chart of the proportion of reported blocks according to address statistics in the last 7 days.
+  - Miner Versions(Recent 7 days)：pie chart of the proportion of version numbers of miners reported in the last 7 days.
 - Activities
-  - Transaction count per day
-  - Unique address Used per day: count of addresses used accrued from 0
-  - Cell count: current total count of live cells and dead cells on chain by each day.
-  - Balance ranking: list 50 addresses that hold the most capacity
-  - Balance distribution
-  - Transaction fee
+  - Transaction Count: transaction count for per day 
+  - Unique Address Used:count of addresses used accrued from 0 by day.
+  - Cell Count: current total count of live cells and dead cells on chain by each day.
+  - Balance Ranking: list 50 addresses that hold the most capacity.
+  - Balance Distribution:shows the address count at specific balance range, and that under specific balance amount.
+  - Transaction Fee:total transaction fees charged by miners per day.
 - Nervos DAO
-  - Total deposit: total deposited and locked capacity on chain and deposited addresses by each day.
-  - Daily deposit: deposited capacity and deposited addresses per day
-  - Deposit to circulation ratio: the ratio of DAO deposit to circulating supply. Where the circulating supply is equal to the total supply minus the burnt part and the unvested part.
+  - Total Deposit: total deposited and locked capacity on chain and deposited addresses by each day.
+  - Daily Deposit: deposited capacity and deposited addresses per day
+  - Deposit to Circulation Ratio: the ratio of DAO deposit to circulating supply. Where the circulating supply is equal to the total supply minus the burnt part and the unvested part.
 - Economic Status
-  - Total supply:
+  - Total Supply:
     Total supply equals the sum of the primary issuance and the secondary issuance;
     The burnt part equals the sum of the 25% genesis issuance burnt and the burnt portion in the secondary issuance;
     The unvested part equals the portion that is locked by time lock, which will be released gradually by a predefined schedule.
     The circulating supply is equal to the total supply minus the burnt part and the unvested part.
-  - Nominal DAO compensation rate:
+  - Nominal DAO Compensation Rate:
     The nominal compensation rate is provided by DAO when there is no burnt portion in the secondary issuance.
     The real compensation rate is always higher than the nominal compensation rate.
-  - Secondary issuance:
+  - Secondary Issuance:
     The secondary issuance is automatically divided into three parts, the compensation, the mining reward, and the treasury (burnt by now).
     They are proportional to the DAO deposit, the storage occupation, and the rest of CKBytes.
-  - Inflation rate:
+  - Inflation Rate:
     Nominal inflation rate: the inflation introduced by the primary issuance and the secondary issuance.
     Nominal APC: the anti-dilution compensation rate of Nervos DAO.
     Real inflation rate: the compound inflation rate the nominal inflation rate minus the nominal APC, which is gradual to zero.
