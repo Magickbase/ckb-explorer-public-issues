@@ -426,3 +426,8 @@ If not explictly specify the time series unit of the chart, it means the charts 
 
 - failed to search: https://explorer.nervos.org/search/fail?q=ckb1qzda0cr08m85hc8jlnfp3zer7xulejywt49kt2rr0vthywaa50xwsq22xdj8q4jdql98qkdhnqzgrsk4nqyavdcratvu
 - page not found: https://explorer.nervos.org/404
+
+### Materials
+
+- Axure: https://x2mnhs.axshare.com/
+- Figma: https://www.figma.com/file/6XNoimRDbFTTNm016rbIdU/Magickbase?node-id=3745%3A20658
