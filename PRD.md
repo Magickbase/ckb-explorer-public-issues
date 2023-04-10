@@ -431,3 +431,37 @@ If not explictly specify the time series unit of the chart, it means the charts 
 
 - Axure: https://x2mnhs.axshare.com/
 - Figma: https://www.figma.com/file/6XNoimRDbFTTNm016rbIdU/Magickbase?node-id=3745%3A20658
+
+
+### NervosDAO: https://explorer.nervos.org/nervosdao
+<img width="744" alt="image" src="https://user-images.githubusercontent.com/85155313/230821053-36e8da87-28eb-4524-a584-e1ccf4752c3f.png">
+<img width="754" alt="image" src="https://user-images.githubusercontent.com/85155313/230820319-9c145201-3646-4820-a521-80f6588bcb97.png">
+
+- Dashboard
+<img width="596" alt="image" src="https://user-images.githubusercontent.com/85155313/230820779-20a9522c-fd7e-4ba2-83a5-ffa4d67a778d.png">
+
+  - Deposit: Total deposited and locked capacity. These data will be updated on 00:00 (UTC +8).
+  - Claimed Compensation: Total claimed compensation by depositors.
+  - Estimated APC: The estimated annual percentage rate change.
+  - Addresses: The total number of the address who participate Nervos DAO. 
+  - Average Deposit Time: The average deposit time of all depositors.
+  - Unclaimed Compensation: The total unclaimed compensation of all depositors, this amount of CKB could be withdraw from Nervos DAO.
+  - Secondary Issuance
+    - Mining Reward
+    - Deposit Compensation
+    - Burnt
+
+- Transaction
+<img width="578" alt="image" src="https://user-images.githubusercontent.com/85155313/230821000-7aeabf81-d4b2-4271-8dc9-b5d1ad5f2093.png">
+  
+  - Deposit Transaction: User deposit CKB in this transaction. This kind of transaction will be marked with this icon in the reciever side.<img width="40" alt="image" src="https://user-images.githubusercontent.com/85155313/230819762-74a05785-9ce4-4ce9-9e99-de9acd09106d.png"> 
+  
+  - Withdraw Transaction: User withdraw CKB in this transaction. This kind of transaction will be marked with this icon in the sender side. Hover on the icon to see the user withdraw details.<img width="33" alt="image" src="https://user-images.githubusercontent.com/85155313/230819691-264956f2-45a6-4651-9d0c-b276f2a69a82.png">
+  
+  - Nervos DAO compensation calculation: Calculate the compensation amount users could receive from his/her deposit.This kind of transaction will be marked with this icon in the receiver side.<img width="33" alt="image" src="https://user-images.githubusercontent.com/85155313/230819691-264956f2-45a6-4651-9d0c-b276f2a69a82.png">
+  
+  - Nervos DAO Withdraw Request: User make a withdraw request in this transaction. This kind of transaction will be marked with this icon in the sender side.!<img width="40" alt="image" src="https://user-images.githubusercontent.com/85155313/230819762-74a05785-9ce4-4ce9-9e99-de9acd09106d.png">
+
+- Depositors
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/85155313/230820647-3ef1cf34-90b1-4386-8d38-d62d314f6ed8.png">
+  All the dipositors will listed below , and ranked by the total deposit amount.
