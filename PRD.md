@@ -446,7 +446,7 @@ If not explictly specify the time series unit of the chart, it means the charts 
   - Addresses: The total number of the address who participate Nervos DAO. 
   - Average Deposit Time: The average deposit time of all depositors.
   - Unclaimed Compensation: The total unclaimed compensation of all depositors, this amount of CKB could be withdraw from Nervos DAO.
-  - Secondary Issuance
+  - Secondary Issuance: Provide the more details about the rates of Secondary Issuance. Click [here](https://docs.nervos.org/docs/basics/concepts/economics/#secondary-issuance) to see more about Secondary Issuance.
     - Mining Reward
     - Deposit Compensation
     - Burnt
