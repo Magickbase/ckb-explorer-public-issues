@@ -199,26 +199,21 @@
 
 ### Address Page: `/address/${hash}`
 
-![address_page](https://user-images.githubusercontent.com/122437870/216757182-f7fa9fe7-0b3d-42b9-b27d-4a2c5e5bc6ac.png)
+![iteration1](https://github.com/Magickbase/ckb-explorer-public-issues/assets/122437870/5809625b-c525-4456-a128-bd5f04db3392)
 
-- Overview
+- Address
 
   - Address
   - Copy button: click to copy the address
   - Navigation button: click to page of deprecated address format(if exists) or active address format
-  - Live Cells: count of live cells owned by this address
-  - Block Mined: count of block rewards sent to this address
-  - Lock Script: raw lock script data structure
-    - code hash: code hash field of this lock script, will show a script tag if exists
-    - hash type: hash type field of this lock script
-    - args: args field of this lock script
 
-- Assets
+
+- Overview
 
   - CKB: capacity of plain ckb cells
   - Occupied: A cell is consideres as "occupied" if the type script of this cell is not empty or the data field of this cell is not empty. Here "occupied" represents the total capacity of all occupied cells belongs to the address.
   - Nervos DAO deposit: capacity deposited into Nervos DAO
-  - Nervos DAO compensation: interest earned by deposited capacity
+  - Nervos DAO compensation: interest earned by deposited capacity（It means dao interest + unclaimed compensation. So if you deposit dao once, it must greater than 0）
   - User defined token
     - Sudt: https://explorer.nervos.org/address/ckb1qpzuzykljldwecnuftaq9vjtzhmygqaal4z6ktsw3rylk23y09436q2q6uls60zkrl92uvcw40qrpkxed2ws4umdp3g3fzpktz34pju78wjsqqqqzqqqqqraqqqqp8gqqqqx6qqqqqgqqqqqxqqqqqr9qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqx5qqqqqsqqqqqvqqqqqrzqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq04v8fa
       - Icon
@@ -230,8 +225,16 @@
       - Nft collection name
       - Nft item id
       - Click to nft collection info page `/nft-collection/{hash | cota id}`
+  - Live Cells: count of live cells owned by this address
+  - Block Mined: count of block rewards sent to this address
+  - Lock Script: raw lock script data structure
+    - code hash: code hash field of this lock script, will show a script tag if exists
+    - hash type: hash type field of this lock script
+    - args: args field of this lock script
 
-- Transaction List
+- Transaction List（ Here are two different lists mode for developers and novice users）
+
+[ Professional mode]
   - Total count
   - Transaction hash
   - Block
@@ -246,6 +249,15 @@
     - Arrow: click to transaction consumed this cell, show a ring if cell is not consumed
     - Capacity/amount
   - Income/outcome: ckb balance change caused by this transaction
+
+[ Lite mode]
+ - Transaction hash
+ - Height
+ - TIme：time pass from mined block
+ - Inputz&Output：All inputs and outputs in a single transaction hash
+ - Capacity Change：Changes in address capacity under the transaction hash
+
+
 
 ### Sudt List Page: `/tokens`
 
