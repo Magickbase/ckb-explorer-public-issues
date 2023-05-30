@@ -1,8 +1,6 @@
 ### General Components:
 
-
-
-- Navbar in the header 
+- Navbar in the header
   ![navbar](https://user-images.githubusercontent.com/122437870/216756902-24f6e241-4bf6-4948-a269-8c5b204df7b3.png) 
   - Logo: link to the homepage
   - Home: link to the homepage
