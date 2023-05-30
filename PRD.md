@@ -14,6 +14,7 @@
   - Search Field: a text field for searching, will be hidden on homepage until the window is scrolled to a proper position.
   - Chain type switch: mainnet/testnet
   - Language switch: English/Chinese
+  - Dark Mode: ..........
   
 - Footer
 
@@ -34,6 +35,7 @@
     - YouTube: https://www.youtube.com/channel/UCONuJGdMzUY0Y6jrPBOzH7A
     - Forum: https://talk.nervos.org/
    - Copyright Information：Copyright © `years` Nervos Foundation.All Rights Reserved.
+   - DarkMode: .......
 
 - Notification：A floating layer below the Navbar appears and disappears after a few seconds
  
