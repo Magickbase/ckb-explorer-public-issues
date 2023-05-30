@@ -8,6 +8,10 @@ A general component is provided for WalletConnect on the side of third party wal
 
 > Scanning QR code is the most used and also recommended for users to connect to dApp with your wallet. We also offer a way to connect by pasting the WalletConnect code which could be used for testing. [UI](https://www.figma.com/file/6XNoimRDbFTTNm016rbIdU/Magickbase?type=design&node-id=16072-38648&t=rF3mLzNYeaveGD6Q-0)
 
+#### UI Sketch
+
+![UI图](pic/2023-05-30-09-20-22.png)
+
 #### Status1: Unconnected
 
 While the dapp is unconnected with the wallet, users can click on the button below to scan QR code on the dapp side in order to connect the dapp.
