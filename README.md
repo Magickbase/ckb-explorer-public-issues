@@ -22,3 +22,40 @@ This repo is used to manage public issues of [CKB Explorer](https://github.com/n
 - [Markdown Compact Table Formatter](https://marketplace.visualstudio.com/items?itemName=cipchk.vscode-markdown-compact-table-formatter)
 - [Link Github Issues](https://marketplace.visualstudio.com/items?itemName=dt.ghlink)
   - Search issue  ```project:Magickbase/9```
+
+## Project Modules and Responsible Persons
+
+| Pages              | Frontend          | Backend         |
+|--------------------|-------------------|-----------------|
+| Home               | @PainterPuppets   | @rabbitz        |
+| NervosDAO          | @PainterPuppets   | @zmcNotafraid   |
+| Block Detail       | @Daryl-L          | @rabbitz        |
+| TX Detail          | @PainterPuppets   | @rabbitz        |
+| RGB ++ TX Detail   | @chenyan          |                 |
+| Address Detail     | @Daryl-L          | @rabbitz        |
+| BTC Address Detail | @Daryl-L          | @rabbitz        |
+| sUDT List          | @Daryl-L          | @zmcNotafraid   |
+| SUDT Detail        | @Daryl-L          | @rabbitz        |
+| Inscriptions       | @PainterPuppets   | @zmcNotafraid   |
+| Inscription Detail| @PainterPuppets   | @zmcNotafraid   |
+| NFT Collection     | @Daryl-L          | @zmcNotafraid   |
+| NFT Detail         | @Daryl-L          | @zmcNotafraid   |
+| Script Detail      | @chenyu           | @rabbitz        |
+| Charts             | @zmcNotafraid     | @zmcNotafraid   |
+| Fee Rate           | @zmcNotafraid     | @zmcNotafraid   |
+| Faucet             | @PainterPuppets   | @zmcNotafraid   |
+| Portfolio          | unassigned        | @rabbitz        |
+| DAO Calculator     | @chenyan          | unassigned      |
+
+| Components           | Frontend         | Backend     |
+|----------------------|------------------|-------------|
+| Menu Bar             | @chenyu          | /           |
+| Paging               | @chenyu          | /           |
+| Cell info Decode     | @PainterPuppets  | /           |
+| Cell info RGB++      | @Daryl-L         | @rabbitz    |
+| Search bar           | @PainterPuppets  | @rabbitz    |
+| Search bar RGB ++    | @guoyu           | @rabbitz    |
+| Transaction List     | @chenyan         | /           |
+| Tooltip              | Pending Allocation | /         |
+| Node Select Mode     | /                | /           |
+| Graph service        | @guoyu           | @rabbitz    |
