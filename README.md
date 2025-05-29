@@ -11,8 +11,7 @@ This repo is used to manage public issues of [CKB Explorer](https://github.com/n
 | 0 | General Components | Contain some common compoents | [open](CKB-Explorer-PRDs/GeneralComponents/GeneralComponents.md) | -| - |
 | 1 | Export to csv | The feature,Export to csv, provides a function on such as Block page, Transaction page and so on for user to download some transaction info from block explorer | - | [#325](https://github.com/Magickbase/ckb-explorer-public-issues/issues/325) | [open](https://app.axure.cloud/app/project/o093j5/preview/9ug42i) |
 | 2 | Nervos DAO | The product requirements about Nervos DAO page | [open](CKB-Explorer-PRDs/NervosDAO/NervosDAO.md) | -| - |
-| 3 | WalletConnect availability | Whole user story for the usage of WalletConnect, ranging from the dApp to Neuron  CKB wallet  | - | [#144](https://github.com/Magickbase/neuron-public-issues/issues/144)| [open](https://vs0cjf.axshare.com/#id=owrcmb&p=%E7%AE%80%E4%BB%8B&g=1) |
-
+| 3 | Glossary | Collect and sort some glossary and add field annotation. | - | [#269](https://github.com/Magickbase/ckb-explorer-public-issues/issues/269) | - |
 
 ## Commended plugins
 
