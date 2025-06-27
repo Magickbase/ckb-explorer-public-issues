@@ -1,0 +1,24 @@
+## Description
+Currently, the browser provides a method for developers to upload Token Info via email to the developer community. However, this method is no longer sufficient to meet the needs of new frameworks like Kuai for SUDT development. Instead, an API for Token Info uploading should be introduced as a replacement. 
+
+For API part, it’s sure that: 
+1. It will be open for all UDT project.
+2. Uploading info function has a limit from tech side to ensure the service work normally.
+3. Uploading info needs admin to approve.
+
+So a workflow are also supposed be added to ensure the TokenInfo can only be modified to the Token creator. Here’s the flow chart to avoid some attacks like update the decimal to make transfer amount 10x than it's, so the attacker can cheat others by claiming that he/she has sent 10x sudt.
+
+Notes: Because the Author Emails was not required in elder Token Info, these token’s Author Email should be set as CKB Explorer’s  official email address.
+
+### hover tips on the UDT api pop-up
+|Term| Description|
+|---|---|
+|Token Type|由于SUDT的 Token 类型有两类，请根据此SUDT的实际采用的Cell类型进行选择|
+|Args|Args 是CKB 中Cell模型数据结构中的 Args 字段，这里要求填写您的 UDT Cell中的Args字段|
+|Symbol|SUDT 的 Symbol|
+|Name|SUDT 的 Name|
+|Decimal|SUDT 的 精度|
+|Description|SUDT的描述|
+|Website|SUDT项目或组织的网站，如果有的话|
+|Creator Email|SUDT项目或组织创建者的邮箱，此项十分重要，关系到后续SUDT信息的更新|
+|Logo|SUDT的代币图标|

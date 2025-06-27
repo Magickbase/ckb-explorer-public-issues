@@ -2,3 +2,4 @@
 .vscode
 .git
 *.github-issues
+*.code-workspace

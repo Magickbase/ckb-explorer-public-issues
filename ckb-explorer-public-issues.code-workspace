@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"pasteImage.basePath": "${currentFileDir}",
+		"pasteImage.path": "${currentFileDir}/${currentFileNameWithoutExt}_picture",
+		"pasteImage.nameSuffix": "1231231",
+		"pasteImage.namePrefix": "1231231",
+		"pasteImage.prefix": "1231231",
+		"pasteImage.showFilePathConfirmInputBox": true,
+		"pasteImage.suffix": "78678",
+		"pasteImage.defaultName": "1231312312321",
+		"markdown-image.base.altFormat": "${filename}",
+		"markdown-image.base.fileNameFormat": "${mdname}_img/${prompt}",
+		"markdown-image.local.path": "",
+		"markdown-image.base.uploadMethods": [
+			"Local"
+		]
+	}
+}
