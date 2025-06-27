@@ -1,0 +1,65 @@
+name: Simple Feature Request
+description: Used for minor enhancements or quick fixes
+title: '[Feature] <Name>'
+labels:
+  - enhancement
+projects:
+  - Magickbase/9
+assignees:
+  - Danie0918
+  - poor-defined
+
+body:
+  - type: markdown
+    attributes:
+      value: 'Thank you for proposing a new feature! Please fill out the following template to help us collaborate better.'
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 'Summary'
+      description: 'Brief description of the feature request'
+      placeholder: |
+        What is the feature?
+        - Brief description
+        - Expected outcome
+
+        Why is it needed?
+        - Current problem
+        - Impact on users
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 'Acceptance Criteria'
+      description: 'Clear criteria for determining when the feature is complete'
+      placeholder: |
+        - List of requirements
+        - Expected behavior
+        - Success criteria
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: implementation
+    attributes:
+      label: 'Implementation'
+      description: 'Implementation phases'
+      options:
+        - label: 'Development'
+        - label: 'Testing'
+        - label: 'Deployment'
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: 'Additional Information'
+      description: 'Any relevant screenshots, mockups, or references'
+      placeholder: |
+        - Screenshots
+        - References
+        - Notes
+    validations:
+      required: false
