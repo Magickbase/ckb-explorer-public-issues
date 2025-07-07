@@ -1,6 +1,6 @@
 name: Feature Request
 description: This is the overall issue template for proposing new features or tasks
-title: '[High-Level Feature] <Name>'
+title: '[Top-Level Feature] <Name>'
 labels:
   - feature-request
 projects:
@@ -12,7 +12,7 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: 'Thank you for proposing a new feature! Please fill out the following template to help us collaborate better.'
+      value: 'Thank you for proposing a new feature! This is a **top-level issue** that will be broken down into sub-issues for tracking individual implementation phases. Please fill out the following template to help us collaborate better.'
 
   - type: textarea
     id: summary
@@ -94,7 +94,7 @@ body:
     id: implementation_phases
     attributes:
       label: 'Implementation Phases'
-      description: 'Project phases and deliverables'
+      description: '👉🏻 **Each checked phase should be converted into a separate sub-issue for tracking.** This helps break down complex features into manageable phases and provides better visibility into progress across the entire development lifecycle.'
       options:
         - label: 'Discovery - Requirements analysis and feasibility study'
         - label: 'Design - Technical design, architecture, and UI/UX'
