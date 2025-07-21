@@ -18,7 +18,7 @@ This page is the **Transaction Details Page** in the CKB explorer. It is designe
 | Version | Date       | Status  | Notes                                                            |
 | ------- | ---------- | ------- | ---------------------------------------------------------------- |
 | v1.0    | 2025-07-21 | Drafted | Initial version based on wireframe design                        |
-| v1.1    | TBD        | WIP     | To add description about the rule of Lite mode.|
+| v1.1    | 2025-07-21   |  Drafted    | Add cases for the DAO transaction|
 
 
 ## 3. Page Constitution
@@ -78,3 +78,34 @@ Transaction Detail Pannel is composed by 2 sections:
 * **Lite mode**: group the transaction input/output by addresses.
     ![5](TransactionDetailPage_img/5.png) 
 
+## Other Cases
+
+### Case1: Nervos DAO transactions
+
+When the transaction contains DAO related cell, we need to show different icon for the cells:
+- Nervos DAO deposit
+- Nervos DAO Withdraw
+
+And we should pay attention to the position of the cells:
+1. If the Nervos DAO deposit Cell is in the output, then the tx should be a `deposit` transaction
+2. If the Nervos DAO deposit Cell is in the input and Nervos DAO Withdraw is in output then the tx should be a `withdraw request` transaction
+3. If the Nervos DAO Withdraw Cell is in the input then the tx should be a `withdraw` transaction
+
+
+Here're 3 exmaples of Nervos DAO transactions:
+
+We should pay attention that the tooltips titles are different when hovering on  `withdraw request` transaction and `withdraw` transaction
+
+- deposit: 
+  - [tx example](https://explorer.nervos.org/transaction/0x7a2aacc857cae01bf0284a6b273ea024c50a7bbff1d3564781096dc17e1d94da)
+  - ![dao_deposit](TransactionDetailPage_img/dao_deposit.png)  
+
+- withdraw request: 
+  - [tx example](https://explorer.nervos.org/transaction/0x8cacdb8f513727ef4253e3389890d5cfb5df08fee8a8844b7a9ff1beda6ceaca)
+  - ![dao_withdraw_request](TransactionDetailPage_img/dao_withdraw_request.png)  
+
+- Withdraw: 
+  - [tx example](https://explorer.nervos.org/transaction/0x68de0af41d9740a80665b9e473a0853ae368e03d1267305a493a637d6274eb3f)
+  - ![dao_withdraw](TransactionDetailPage_img/dao_withdraw.png)  
+
+> The hover tooltips for the icons (based on the position of the cell) should be uniform.
