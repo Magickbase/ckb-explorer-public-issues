@@ -39,6 +39,7 @@ This section shows the chart from grafana.
   * Displays real-time usage over time
 
 
+![7](NervosDAO_img/7.png)  
 ### 3.4. Recommended Server Configuration Section
 
 Grouped into four major configuration panels, each showing minimum, recommended, and high-load requirements.
@@ -52,16 +53,16 @@ Grouped into four major configuration panels, each showing minimum, recommended,
 
 #### B. Memory Configuration
 
-* **Minimum**: 4 GB
-* **Recommended**: 8 GB
-* **High Load**: 16 GB
+* **Minimum**: 16GB
+* **Recommended**: 32 GB
+* **High Load**: 64 GB
 * **Note**: Memory usage scales with transaction volume.
 
 #### C. Storage Configuration
 
-* **Current Block Size**: \~500 GB
+* **Current Block Size**: \~126GB 
 * **Annual Growth Estimate**: \~500–1000 GB
-* **Recommended**: 1 TB+ SSD
+* **Recommended**: 1TB+
 * **Note**: SSD significantly improves syncing and query performance.
 
 #### D. Network Requirements
