@@ -12,7 +12,7 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: 'Thank you for proposing a new feature! Please fill out the following template to help us collaborate better.'
+      value: 'Thank you for proposing a new feature! This is a **top-level issue** that will be broken down into sub-issues for tracking individual implementation steps. Please fill out the following template to help us collaborate better.'
 
   - type: textarea
     id: summary
@@ -45,8 +45,8 @@ body:
   - type: checkboxes
     id: implementation
     attributes:
-      label: 'Implementation'
-      description: 'Implementation phases'
+      label: 'Implementation Steps'
+      description: '👉🏻 **Each checked item should be converted into a separate sub-issue for tracking.** This helps break down the work into manageable tasks and provides better visibility into progress.'
       options:
         - label: 'Development'
         - label: 'Testing'
