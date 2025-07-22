@@ -61,8 +61,8 @@ Grouped into four major configuration panels, each showing minimum, recommended,
 #### C. Storage Configuration
 
 * **Current Block Size**: \~126GB 
-* **Annual Growth Estimate**: \~500–1000 GB
-* **Recommended**: 1TB+
+* **Annual Growth Estimate**: \~5–10 GB
+* **Recommended**: 1000G
 * **Note**: SSD significantly improves syncing and query performance.
 
 #### D. Network Requirements
